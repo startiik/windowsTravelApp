@@ -27,6 +27,7 @@ namespace TravelBBNService.Models
 
       
         public DbSet<Trip> Trips { get; set; }
+        public DbSet<Account> Accounts { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
