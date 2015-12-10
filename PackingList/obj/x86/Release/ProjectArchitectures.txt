@@ -1,0 +1,1 @@
+D:\Windows Phone\PackingList\PackaglistAppWindowsUniversal\PackingList\PackingList.csproj;x86
