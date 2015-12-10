@@ -11,6 +11,6 @@ namespace TravelBBNService.DataObjects
         public string Username { get; set; }
         public byte[] Salt { get; set; }
         public byte[] SaltedAndHashedPassword { get; set; }
-        public IEnumerable<Trip> reizen { get; set; }
+        public IEnumerable<Reis> reizen { get; set; }
     }
 }

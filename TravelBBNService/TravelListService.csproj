@@ -189,12 +189,13 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CustomLoginController.cs" />
     <Compile Include="Controllers\CustomRegistrationController.cs" />
-    <Compile Include="Controllers\TripController.cs" />
     <Compile Include="CustomLoginProvider.cs" />
     <Compile Include="CustomLoginProviderUtils.cs" />
     <Compile Include="CustomLoginResult.cs" />
     <Compile Include="DataObjects\Account.cs" />
-    <Compile Include="DataObjects\Trip.cs" />
+    <Compile Include="DataObjects\Item.cs" />
+    <Compile Include="DataObjects\Reis.cs" />
+    <Compile Include="DataObjects\Taak.cs" />
     <Compile Include="LoginRequest.cs" />
     <Compile Include="Models\TravelBBNContext.cs" />
     <Compile Include="RegistrationRequest.cs" />
