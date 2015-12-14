@@ -19,21 +19,21 @@ using Windows.UI.Xaml.Navigation;
 
 namespace PackingList.UserControls
 {
-    public sealed partial class UCReizen : UserControl
+    public sealed partial class UCItems : UserControl
     {
         private MainViewModel vm = new MainViewModel();
-        public UCReizen()
+        public UCItems()
         {
-            this.InitializeComponent();
-            vm.laadReizen();
+            //this.InitializeComponent();
+            //vm.laadReizen();
         }
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            ListView lv = (ListView)sender;
-            Reis geselecteerdeReis = lv.SelectedItem as Reis;
-            var frame = Window.Current.Content as Frame;
-            frame.Navigate(typeof(ReisItems), geselecteerdeReis);
+            //ListView lv = (ListView)sender;
+            //Reis geselecteerdeReis = lv.SelectedItem as Reis;
+            //var frame = Window.Current.Content as Frame;
+            //frame.Navigate(typeof(ReisItems), geselecteerdeReis);
         }
     }
 }

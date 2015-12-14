@@ -10,6 +10,8 @@ namespace PackingList.Models
     {
         public string Title { get; set; }
         public DateTime DepartureDate { get; set; }
+        public String Location { get; set; }
+        List<ReisItem> ReisItems { get; set; }
 
     }
 }
