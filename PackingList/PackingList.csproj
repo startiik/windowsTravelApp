@@ -110,8 +110,14 @@
       <DependentUpon>ReisItems.xaml</DependentUpon>
     </Compile>
     <Compile Include="Service\DummyService.cs" />
+    <Compile Include="UserControls\UCItems.xaml.cs">
+      <DependentUpon>UCItems.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\UCReizen.xaml.cs">
       <DependentUpon>UCReizen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UCTaken.xaml.cs">
+      <DependentUpon>UCTaken.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewModels\MainViewModel.cs" />
   </ItemGroup>
@@ -144,7 +150,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="UserControls\UCItems.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UserControls\UCReizen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\UCTaken.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

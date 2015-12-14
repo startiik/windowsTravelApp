@@ -25,8 +25,20 @@
                 <ListView x:Name="list" SelectionChanged="ListView_SelectionChanged">
                     <ListViewItem>
                         <StackPanel Orientation="Horizontal">
-                            <AppBarButton Icon="Video"/>
+                            <AppBarButton Icon="World"/>
                             <TextBlock Text="Reizen"/>
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem>
+                        <StackPanel Orientation="Horizontal">
+                            <AppBarButton Icon="AllApps" />
+                            <TextBlock Text="Taken" />
+                        </StackPanel>
+                    </ListViewItem>
+                    <ListViewItem>
+                        <StackPanel Orientation="Horizontal">
+                            <AppBarButton Icon="Pin" />
+                            <TextBlock Text="Items" />
                         </StackPanel>
                     </ListViewItem>
                 </ListView>

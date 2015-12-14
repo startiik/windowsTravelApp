@@ -42,6 +42,12 @@ namespace PackingList
                 case 0:
                     mainContent.Content = new UCReizen();
                     break;
+                case 1:
+                    mainContent.Content = new UCTaken();
+                    break;
+                case 2:
+                    mainContent.Content = new UCItems();
+                    break;
                     //books, settings...
             }
         }
