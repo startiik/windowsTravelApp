@@ -11,11 +11,6 @@ namespace PackingList.ViewModels
     public class MainViewModel
     {
         public List<Reis> Reizen { get; set; }
-        DummyService dm = new DummyService();
 
-        public void laadReizen()
-        {
-            Reizen = dm.haalReizenOp();
-        }
     }
 }

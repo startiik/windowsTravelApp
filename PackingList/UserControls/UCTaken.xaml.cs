@@ -25,15 +25,14 @@ namespace PackingList.UserControls
         public UCTaken()
         {
             //this.InitializeComponent();
-            //vm.laadReizen();
         }
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //ListView lv = (ListView)sender;
-            //Reis geselecteerdeReis = lv.SelectedItem as Reis;
-            //var frame = Window.Current.Content as Frame;
-            //frame.Navigate(typeof(ReisItems), geselecteerdeReis);
+            ListView lv = (ListView)sender;
+            Reis geselecteerdeReis = lv.SelectedItem as Reis;s
+            var frame = Window.Current.Content as Frame;
+            frame.Navigate(typeof(ReisItems), geselecteerdeReis);
         }
     }
 }

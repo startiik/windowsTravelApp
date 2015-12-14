@@ -7,6 +7,13 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.TopAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Icon="Home" Label="Home" />
+            </CommandBar.PrimaryCommands>
+        </CommandBar>
+    </Page.TopAppBar>
     <RelativePanel x:Name="app" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Button x:Name="splitViewButton" Click="splitViewButton_Click">
             <FontIcon FontFamily="{ThemeResource ContentControlThemeFontFamily}" Glyph="&#x2261;" />

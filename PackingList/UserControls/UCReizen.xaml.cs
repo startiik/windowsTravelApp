@@ -25,7 +25,6 @@ namespace PackingList.UserControls
         public UCReizen()
         {
             this.InitializeComponent();
-            vm.laadReizen();
         }
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)

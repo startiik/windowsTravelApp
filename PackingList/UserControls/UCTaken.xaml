@@ -7,7 +7,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <ListView xmlns:m="using:PackingList.Models"  ItemsSource="{x:Bind vm.Reizen}" SelectionChanged="ListView_SelectionChanged">
+        <ListView.ItemsPanel>
+            <ItemsPanelTemplate>
+                <WrapGrid Orientation="Horizontal" ItemHeight="200" ItemWidth="400" />
+            </ItemsPanelTemplate>
+        </ListView.ItemsPanel>
+        <ListView.ItemTemplate>
+            <DataTemplate x:DataType="m:Taak">
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="{x:Bind Done}"/>
+                    <TextBlock Text="{x:Bind Title}"/>
+                    <TextBlock Text="{x:Bind DueDate}"/>
+                </StackPanel>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
 </Page>
