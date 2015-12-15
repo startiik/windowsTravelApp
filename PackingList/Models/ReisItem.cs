@@ -11,5 +11,10 @@ namespace PackingList.Models
         public string Title { get; set; }
 
         public Boolean Done { get; set; }
+
+        public int Amount { get; set; }
+
+        public String Category { get; set; }
+
     }
 }

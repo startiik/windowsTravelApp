@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using PackingList.Models;
 using PackingList.UserControls;
+using Windows.Networking.Connectivity;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -28,6 +29,26 @@ namespace PackingList
         public MainPage()
         {
             this.InitializeComponent();
+
+            if (!isInternet())
+                showNoWifiDialog();
+        }
+
+        private async void showNoWifiDialog()
+        {
+            ContentDialog noWifi = new ContentDialog()
+            {
+                Title = "No wifi connection",
+                Content = "Check your connection and try again",
+                PrimaryButtonText = "OK"
+            };
+            await noWifi.ShowAsync();
+        }
+
+        public static bool isInternet()
+        {
+            ConnectionProfile connections = NetworkInformation.GetInternetConnectionProfile();
+            return connections != null && connections.GetNetworkConnectivityLevel() == NetworkConnectivityLevel.InternetAccess;
         }
 
         private void splitViewButton_Click(object sender, RoutedEventArgs e)
@@ -41,6 +62,12 @@ namespace PackingList
             {
                 case 0:
                     mainContent.Content = new UCReizen();
+                    break;
+                case 1:
+                    mainContent.Content = new UCTaken();
+                    break;
+                case 2:
+                    mainContent.Content = new UCItems();
                     break;
                     //books, settings...
             }

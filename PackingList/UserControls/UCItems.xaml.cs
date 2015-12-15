@@ -19,12 +19,17 @@ using Windows.UI.Xaml.Navigation;
 
 namespace PackingList.UserControls
 {
-    public sealed partial class UCReizen : UserControl
+    public sealed partial class UCItems : UserControl
     {
         private MainViewModel vm = new MainViewModel();
-        public UCReizen()
+
+        private Reis currentReis;
+        public UCItems(MainViewModel vm, Reis reis)
         {
-            this.InitializeComponent();
+            this.vm = vm;
+            InitializeComponent();
+            currentReis = reis;
+            loadData();
         }
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -33,6 +38,14 @@ namespace PackingList.UserControls
             Reis geselecteerdeReis = lv.SelectedItem as Reis;
             var frame = Window.Current.Content as Frame;
             frame.Navigate(typeof(ReisItems), geselecteerdeReis);
+        }
+
+        public async void loadData()
+        {
+            // items komen van de view
+            /*ListItems.ItemsSource = await vm.GetItems(currentTrip);
+            LoadingItems.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            LoadingItems.IsEnabled = false;*/
         }
     }
 }

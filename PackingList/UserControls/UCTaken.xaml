@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="PackingList.UCTaken"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PackingList"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <ListView xmlns:m="using:PackingList.Models"  ItemsSource="{x:Bind vm.Reizen}" SelectionChanged="ListView_SelectionChanged">
+        <ListView.ItemsPanel>
+            <ItemsPanelTemplate>
+                <WrapGrid Orientation="Horizontal" ItemHeight="200" ItemWidth="400" />
+            </ItemsPanelTemplate>
+        </ListView.ItemsPanel>
+        <ListView.ItemTemplate>
+            <DataTemplate x:DataType="m:Taak">
+                <StackPanel Orientation="Horizontal" Margin="10">
+                    <TextBlock Text="{x:Bind Done}"/>
+                    <TextBlock Text="{x:Bind Title}"/>
+                    <TextBlock Text="{x:Bind DueDate}"/>
+                </StackPanel>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</Page>

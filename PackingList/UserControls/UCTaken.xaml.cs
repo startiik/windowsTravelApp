@@ -19,12 +19,12 @@ using Windows.UI.Xaml.Navigation;
 
 namespace PackingList.UserControls
 {
-    public sealed partial class UCReizen : UserControl
+    public sealed partial class UCTaken : UserControl
     {
         private MainViewModel vm = new MainViewModel();
-        public UCReizen()
+        public UCTaken()
         {
-            this.InitializeComponent();
+            //this.InitializeComponent();
         }
 
         private void ListView_SelectionChanged(object sender, SelectionChangedEventArgs e)

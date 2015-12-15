@@ -9,5 +9,8 @@ namespace PackingList.Models
     class Taak
     {
         public string Title { get; set; }
+        public Boolean Done { get; set; }
+        public DateTime DueDate { get; set; }
+
     }
 }

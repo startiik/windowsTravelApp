@@ -14,12 +14,12 @@
             </CommandBar.PrimaryCommands>
         </CommandBar>
     </Page.TopAppBar>
-    <RelativePanel x:Name="app" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="splitViewButton" Click="splitViewButton_Click">
+    <RelativePanel x:ConnectionId='1' x:Name="app" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:ConnectionId='2' x:Name="splitViewButton"                              >
             <FontIcon FontFamily="{ThemeResource ContentControlThemeFontFamily}" Glyph="&#x2261;" />
         </Button>
-        <TextBlock x:Name="lblName" RelativePanel.Below="myContentDialog" ></TextBlock>
-        <ContentDialog x:Name="myContentDialog"
+        <TextBlock x:ConnectionId='3' x:Name="lblName" RelativePanel.Below="myContentDialog" ></TextBlock>
+        <ContentDialog x:ConnectionId='4' x:Name="myContentDialog"
                        VerticalAlignment="Stretch"
                        Title="Enter your username"
                        PrimaryButtonText="OK"
@@ -27,9 +27,9 @@
                        RelativePanel.Below="splitViewButton"
                        MaxWidth="{Binding ActualWidth, ElementName=app}">
         </ContentDialog>
-        <SplitView x:Name="splitView" RelativePanel.Below="splitViewButton">
+        <SplitView x:ConnectionId='5' x:Name="splitView" RelativePanel.Below="splitViewButton">
             <SplitView.Pane>
-                <ListView x:Name="list" SelectionChanged="ListView_SelectionChanged">
+                <ListView x:ConnectionId='6' x:Name="list"                                             >
                     <ListViewItem>
                         <StackPanel Orientation="Horizontal">
                             <AppBarButton Icon="World"/>
@@ -50,11 +50,11 @@
                     </ListViewItem>
                 </ListView>
             </SplitView.Pane>
-            <ContentControl x:Name="mainContent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <ContentControl x:ConnectionId='7' x:Name="mainContent" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
         </SplitView>
     <VisualStateManager.VisualStateGroups>
         <VisualStateGroup>
-            <VisualState x:Name="LaptopView">
+            <VisualState x:ConnectionId='8' x:Name="LaptopView">
                 <VisualState.StateTriggers>
                     <AdaptiveTrigger MinWindowWidth="720" />
                 </VisualState.StateTriggers>
@@ -67,3 +67,4 @@
     </VisualStateManager.VisualStateGroups>
     </RelativePanel>
 </Page>
+
