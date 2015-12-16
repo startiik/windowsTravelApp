@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace PackingList.Models
 {
-    class User
+    public class User
     {
         public User()
         {
-            Trips = new List<Reis>();
+            Reizen = new List<Reis>();
         }
         public string Id { get; set; }
         public string Username { get; set; }
-        public ICollection<Reis> Trips { get; set; }
+        public ICollection<Reis> Reizen { get; set; }
     }
 }

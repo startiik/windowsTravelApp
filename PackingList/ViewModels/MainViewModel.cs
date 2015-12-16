@@ -12,12 +12,12 @@ namespace PackingList.ViewModels
 {
     public class MainViewModel
     {
-        private MobileServiceCollection<Reis, Reis> reizen;
-        private IMobileServiceTable<Reis> reisTable;
+        public MobileServiceCollection<Reis, Reis> reizen;
+        public IMobileServiceTable<Reis> reisTable;
 
         public MainViewModel()
         {
-            reisTable = App.MobileService.GetTable<Reis>();
+            reisTable = App.MobileService.GetTable<Reis>(); 
         }
 
 

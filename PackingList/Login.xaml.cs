@@ -74,10 +74,10 @@ namespace PackingList
             // Login the user and then load data from the mobile app.
             if (await AuthenticateAsync())
             {
-                // Hide the login button and load items from the mobile app.
+                Frame rootFrame = Window.Current.Content as Frame;
+
                 ButtonLogin.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
-                //await InitLocalStoreAsync(); //offline sync support.
-                //await RefreshTodoItems();
+                rootFrame.Navigate(typeof(MainPage));
             }
         }
 

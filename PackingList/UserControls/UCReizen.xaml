@@ -9,7 +9,7 @@
     d:DesignHeight="300"
     d:DesignWidth="400">
 
-    <ListView xmlns:m="using:PackingList.Models"  ItemsSource="{x:Bind vm.Reizen}" SelectionChanged="ListView_SelectionChanged">
+    <ListView xmlns:m="using:PackingList.Models"  ItemsSource="{x:Bind vm.reizen}" SelectionChanged="ListView_SelectionChanged">
         <ListView.ItemsPanel>
             <ItemsPanelTemplate>
                 <WrapGrid Orientation="Horizontal" ItemHeight="200" ItemWidth="400" />

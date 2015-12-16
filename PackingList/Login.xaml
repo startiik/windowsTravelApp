@@ -9,7 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Button Name="ButtonLogin" Click="ButtonLogin_Click" 
-                Visibility="Visible">Sign in
-            </Button>
+                Visibility="Visible">Sign in with Facebook
+        </Button>
     </Grid>
 </Page>

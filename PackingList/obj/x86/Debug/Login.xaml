@@ -9,8 +9,8 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Button x:ConnectionId='1' Name="ButtonLogin"                           
-                Visibility="Visible">Sign in
-            </Button>
+                Visibility="Visible">Sign in with Facebook
+        </Button>
     </Grid>
 </Page>
 

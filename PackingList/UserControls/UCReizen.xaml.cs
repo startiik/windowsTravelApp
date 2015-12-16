@@ -21,7 +21,7 @@ namespace PackingList.UserControls
 {
     public sealed partial class UCReizen : UserControl
     {
-        private MainViewModel vm = new MainViewModel();
+        public MainViewModel vm = new MainViewModel();
         public UCReizen()
         {
             this.InitializeComponent();
