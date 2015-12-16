@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\bram\Documents\windowsTravelApp\PackingList\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-12-16T13:14:10.245</Modified>
+      <Modified>2015-12-16T13:43:15.774</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -70,7 +70,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bram\Documents\windowsTravelApp\PackingList\bin\x86\Debug\Core\entrypoint\PackingList.exe">
       <PackagePath>entrypoint\PackingList.exe</PackagePath>
-      <Modified>2015-12-16T13:14:08.508</Modified>
+      <Modified>2015-12-16T13:43:14.314</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bram\Documents\windowsTravelApp\PackingList\bin\x86\Debug\Core\Facebook.dll">
       <PackagePath>Facebook.dll</PackagePath>
@@ -114,7 +114,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bram\Documents\windowsTravelApp\PackingList\bin\x86\Debug\Core\PackingList.exe">
       <PackagePath>PackingList.exe</PackagePath>
-      <Modified>2015-12-16T13:14:10.244</Modified>
+      <Modified>2015-12-16T13:43:15.772</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bram\Documents\windowsTravelApp\PackingList\bin\x86\Debug\Core\PackingList.xr.xml">
       <PackagePath>PackingList.xr.xml</PackagePath>
@@ -126,7 +126,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bram\Documents\windowsTravelApp\PackingList\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-12-16T13:14:08.952</Modified>
+      <Modified>2015-12-16T13:43:14.896</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\bram\Documents\windowsTravelApp\PackingList\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
