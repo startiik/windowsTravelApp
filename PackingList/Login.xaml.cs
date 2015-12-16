@@ -30,7 +30,7 @@ namespace PackingList
     public sealed partial class Login : Page
     {
         private MobileServiceClient client = App.MobileService;
-        private IMobileServiceTable<User> accountTable = App.MobileService.GetTable<User>();
+        private IMobileServiceTable<Reis> accountTable = App.MobileService.GetTable<Reis>();
 
 
         public Login()

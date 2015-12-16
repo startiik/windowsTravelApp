@@ -26,7 +26,7 @@ namespace PackingList.ViewModels
             try
             {
                 reizen = await reisTable
-                    .Where(t => t.Title == App.gebruiker.Id)
+                    .Where(t => t.Title == App.reis.Title)
                     .ToCollectionAsync();
             }
             catch (MobileServiceInvalidOperationException e)
@@ -34,14 +34,6 @@ namespace PackingList.ViewModels
                 await new MessageDialog(e.Message, "Error reizen").ShowAsync();
             }
             return reizen;
-        }
-
-        public async Task InsertReis(Reis reis)
-        {
-
-            App.gebruiker.Trips.Add(reis);
-            await reisTable.InsertAsync(reis);
-
         }
     }
 }
