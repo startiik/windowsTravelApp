@@ -186,13 +186,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CustomLoginController.cs" />
-    <Compile Include="Controllers\CustomRegistrationController.cs" />
+    <Compile Include="Controllers\ReisController.cs" />
     <Compile Include="CustomLoginProvider.cs" />
     <Compile Include="CustomLoginProviderUtils.cs" />
     <Compile Include="CustomLoginResult.cs" />
-    <Compile Include="DataObjects\Account.cs" />
     <Compile Include="DataObjects\Item.cs" />
     <Compile Include="DataObjects\Reis.cs" />
     <Compile Include="DataObjects\Taak.cs" />

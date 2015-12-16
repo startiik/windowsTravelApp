@@ -25,7 +25,7 @@ namespace TravelBBNService.Models
         {
         } 
 
-        public DbSet<Account> Accounts { get; set; }
+        public DbSet<Reis> Reizen { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -39,6 +39,8 @@ namespace TravelBBNService.Models
                 new AttributeToColumnAnnotationConvention<TableColumnAttribute, string>(
                     "ServiceTableColumn", (property, attributes) => attributes.Single().ColumnType.ToString()));
         }
+
+        public System.Data.Entity.DbSet<TravelBBNService.DataObjects.Reis> Reis { get; set; }
     }
 
 }
